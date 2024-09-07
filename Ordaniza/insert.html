@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert</title>
+
+    <style>
+        *{
+             font-family: Arial, Helvetica, sans-serif;
+             color: black;
+         }
+         .container{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+         }
+         .content{ 
+            display: grid;
+            place-items: center;
+            border: 1px solid black;
+            width: 40%;
+            height: 60%;
+            background-color: cadetblue;
+         }
+         h2{
+            display: grid;
+            place-self: center;
+         }
+         input{
+            display: flex;
+         }
+         button{
+            position:absolute;
+            bottom: 24%;
+            right: 45%;
+         }
+                
+    </style>
+</head>
+<body>
+  
+<div class="container">
+        <div class="content">
+            <h2>INSERT FORM</h2>
+        <div class="formIn">
+            <form action="Insert.php" method="post">
+            <span>Fistname : <input type="text" name="fName"></span><br><br>
+            <span>Lastname : <input type="text" name="lName"></span><br><br>
+            <span>Email: <input type="email" name="email" ></span><br><br>
+            <input type="submit" name="sub" value="Insert">
+        </form>
+        <button id="back" onclick="window.location.href = 'mainmenu.php';">Back</button>
+    </div>
+    
+            </div>
+        </div>
+      
+       
+
+
+
+        
+</body>
+</html>

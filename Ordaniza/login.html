@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+  <style>
+     *{
+        font-family: Arial, Helvetica, sans-serif;
+     }
+    .log{
+        position:absolute;
+        top: 30%;
+        left: 25%;
+        display: grid;
+        place-items: center;
+        border: 1px solid black;
+        width: 50vw;
+        height: 40vh;
+        background-color:thistle;
+    }
+  </style>
+</head>
+<body>
+<form action="log.php" method="post">
+
+    <div class="log">
+        <h2>LOGIN</h2>
+        <span>Username: <input type="text" name="Username"></span><br><br>
+        <span> Password: <input type="password" name="password" ></span><br><br>
+        <input type="submit" name="sub" value="Login">
+    </div>
+
+</form>
+</body>
+</html>

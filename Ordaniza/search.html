@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <style>
+        *{
+             font-family: Arial, Helvetica, sans-serif;
+             color: black;
+         }
+         .container{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+         }
+         .content{ 
+            border: 1px solid black;
+            width: 40%;
+            height: 80%;
+            background-color: cadetblue;
+         }
+         .formIn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 50%;
+            transform: translate(-50% , -50%);
+         }
+         h2{
+           position: relative;
+           left: 38%;
+         }
+     
+         .back{
+            position: relative;
+            top: 5%;
+            left: 30%;
+            transform: translate(-50%,-50%);
+         }
+
+                
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <div class="content">
+            <h2>Search a User</h2>
+               <div class="formIn">
+                <form method="POST" action="search.php">
+                    <label for="id">Enter ID:</label>
+                    <input type="text" id="id" name="id">
+                    <button type="submit">Search</button>
+                </form>
+                <button class="back" onclick="window.location.href = 'mainmenu.php';">Back</button>
+                </div>
+            </div>
+        </div>
+   
+
+
+
+        
+</body>
+</html>
